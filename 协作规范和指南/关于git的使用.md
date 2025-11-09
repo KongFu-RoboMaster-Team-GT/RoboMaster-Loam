@@ -49,3 +49,10 @@
 
 3. 在vscode里面打开你刚刚复制的路径下面的仓库，名字没有修改的话就是：RoboMaster-Loam
 
+
+4. 在vscode里面创建你自己的分支，然后在这个分支上进行你个人的修改。按照这张图片里面的指示进行新分支的创建：![如图所示](../photobed/branch.png)
+看到图片里面上锁的main了么？点击这个main, 然后在vscode最上面新蹦出来的菜单里面选择+ create a new branch, 输入你的分支名字之后按下enter, vscode会帮你自动checkout到这个分支。
+
+5. 开始你的修改
+
+6. 修改完成后
