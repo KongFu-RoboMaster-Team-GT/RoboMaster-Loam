@@ -5,10 +5,7 @@
 
 1. 打开vscode, 在左侧侧边栏找到extension, 搜索Github Action, Github Pull Requests这两个插件安装。安装左侧侧边栏会多出两个图标，一个像串珠的，一个是github那只猫的，分别是github action 和 github pullrequest
 
-在此说明本文涉及的术语 
-图标对应关系：
-左侧侧边栏长得像串珠的---github action
-左侧侧边栏长得像github那只猫的---github pull request
+插件图片及名字：![image](../photobed/extensions.png)
 
 
 2. vscode里面左侧侧边栏最下面倒数第二个人像的图标，点开他，在里面登陆你的github账户。
@@ -41,18 +38,13 @@
 
 ## 开发流程
 
-1. 去中央仓库点击code copy url to clipboard 
-![如图所示](../photobed/gitcenterrepo.png)
-点绿色的code然后点copy url to clipboard下面的那个按钮，把仓库地址复制到你的剪切板
+1. 创建新分支进行开发， 详情见此视频：https://www.bilibili.com/video/BV1JHkQBEELu
+2. 分支通过后如何同步本地与云端进度，以及继续在个人分支上进行开发：https://www.bilibili.com/video/BV1VXkDBMESG/
 
-2. win + r 打开运行窗口，输入powershell之后按下enter，然后在文件管理器里面打开你要存放代码的文件夹，复制这个文件夹的路径之后在powershell里面的输入 cd + 你刚才复制的路径，然后按下enter，例如：![]()
+## 注意事项
 
-3. 在vscode里面打开你刚刚复制的路径下面的仓库，名字没有修改的话就是：RoboMaster-Loam
-
-
-4. 在vscode里面创建你自己的分支，然后在这个分支上进行你个人的修改。按照这张图片里面的指示进行新分支的创建：![如图所示](../photobed/branch.png)
-看到图片里面上锁的main了么？点击这个main, 然后在vscode最上面新蹦出来的菜单里面选择+ create a new branch, 输入你的分支名字之后按下enter, vscode会帮你自动checkout到这个分支。
-
-5. 开始你的修改
-
-6. 修改完成后
+- 没有必要每个commit都创建pr。
+每次commit相当于保存进度，把commit想象成你按下ctrl+S保存，创建pr给想象成你对着百度网盘上传你保存过的文件。我们提倡在本地修改，创建多条commit然后再创建一条pr.
+- 你可以创建多条pr, 但是我们推荐如果你的一条pr还没有被合并前，最好不要创建第二条pr.等到第一条pr被合并后，再创建第二条pr.
+- 在创建一条开发分支之后，我们建议以后你都使用这条分支进行开发。也就是说，你创建分支这个事情只需要做一次。进行开发前，请千万确保你处于你自己的分支上（可在vscode左下角查看你当前所在分支, 图片中main就是意味着你在main分支，其他名字则意味着你在对应名字的分支）。
+![image](../photobed/branch.png)
