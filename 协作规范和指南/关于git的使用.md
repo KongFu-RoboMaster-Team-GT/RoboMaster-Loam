@@ -24,19 +24,28 @@
 ## 概念介绍 & 术语介绍
 
 对应关系为： 
-- 本文俗称 ： 概念及解释 
-- 中央仓库：  在github上我们功夫组织名下的仓库, 所有的个人代码都提交到这里，这里存储着全部比赛用的代码
-(https://github.com/KongFu-RoboMaster-Team-GT/RoboMaster-Loam/tree/main)
 
-- `git clone` ： 把`中央仓库`的代码复制一份到你的电脑上，
-- `本地仓库` : 执行`git clone` 后， 你把中央仓库代码下载到你电脑上的某个位置。我们称这个位置为你的`本地仓库`
-- 
+
+| 本文称呼 | Git 概念 | 说明 |
+|-----------|-----------|------|
+| **中央仓库** | Remote Repository | 我们团队在 GitHub 上的主仓库，所有人最后的代码都要提交到这里。<br> 地址：[中央仓库（点击打开）](https://github.com/KongFu-RoboMaster-Team-GT/RoboMaster-Loam/tree/main) |
+| **git clone** | Clone 仓库 | 把中央仓库完整复制一份到你的电脑上，建立你的“本地仓库”。 |
+| **本地仓库** | Local Repository | 你电脑上这份仓库的副本，所有修改都先在这里进行。 |
+| **分支（branch）** | Branch | 你的私人开发空间，不会影响主分支（main）。例如 `dev-lisi`。 |
+| **提交（commit）** | Commit | 把你对文件的修改保存到本地仓库。 |
+| **推送（push）** | Push | 把本地仓库的修改上传到 GitHub。 |
+| **拉取请求（PR）** | Pull Request | 请求把你开发的分支合并到主仓库。需要审核后才会合并。 |
+
 
 
 
 ## 开发流程
 
-1. 去中央仓库点击code copy url to clipboard ![如图所示](../photobed/gitcenterrepo.png)
+1. 去中央仓库点击code copy url to clipboard 
+![如图所示](../photobed/gitcenterrepo.png)
 点绿色的code然后点copy url to clipboard下面的那个按钮，把仓库地址复制到你的剪切板
 
-2. 
+2. win + r 打开运行窗口，输入powershell之后按下enter，然后在文件管理器里面打开你要存放代码的文件夹，复制这个文件夹的路径之后在powershell里面的输入 cd + 你刚才复制的路径，然后按下enter，例如：![]()
+
+3. 在vscode里面打开你刚刚复制的路径下面的仓库，名字没有修改的话就是：RoboMaster-Loam
+
