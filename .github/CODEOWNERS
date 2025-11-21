@@ -1,0 +1,12 @@
+# .github/CODEOWNERS
+
+# 个人文件夹内的所有内容由全体成员负责
+个人文件夹/* @KongFu-RoboMaster-Team-GT/2026-team
+
+# 其他所有内容默认由管理员团队负责
+* @KongFu-RoboMaster-Team-GT/pr
+
+
+
+
+
