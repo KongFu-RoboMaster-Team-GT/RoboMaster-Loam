@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<robot ...子属性>
+
+    <link name="base_link">
+    <!-- 属性包含：运动属性 inertial、视觉属性 visual、碰撞属性 collision -->
+        <inertial>
+        包含位置、质量、惯量
+            <origin ...子属性/>
+            <mass ...子属性/>
+            <inertia ...子属性/>
+        </inertial>
+        <visual>
+        包含位置、几何、材料
+            <origin ...子属性/>
+            <geometry>
+                <mesh filename="package://assets/base.stl"/>
+            </geometry>
+            <material ...子属性>
+                <color ...子属性/>
+            </material>
+        </visual>
+        <collision>
+        包含位置、几何
+            <origin ...子属性/>
+            <geometry>
+                <mesh filename="package://assets/base.stl"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="pillar_link">
+
+        <inertial>
+        ...
+        </inertial>
+
+        <visual>
+        ...
+        </visual>
+
+        <collision>
+        ...
+        </collision>
+        
+    </link>
+
+    <!-- 连接上边两个构件 -->
+    <joint name="base_to_pillar_joint" type="revolute">
+    包含 父构件、子构件、关节位置、旋转轴方向、对于子构件的约束
+        <parent link="base_link"/>
+        <child link="pillar_link"/>
+        <origin ...子属性/>
+        <axis xyz="0 0 1"/> <!-- 绕 Z 轴旋转 -->
+        <limit ...子属性/>
+    </joint>
+
+</robot>

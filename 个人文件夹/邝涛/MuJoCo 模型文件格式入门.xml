@@ -1,0 +1,26 @@
+<mujoco model="Simple_3Layer_Robot">
+    <!-- 根节点 -->
+    <worldbody>
+        <!-- 父节点 -->
+        <body ...子属性/>
+            <geom 子属性/>
+            
+            <!-- 子节点 -->
+            <body ...子属性>
+                <joint ...子属性/>
+                <geom ...子属性/>
+
+                <!-- 子节点 -->
+                <body ...子属性>
+                    <joint ...子属性/>
+                    <geom ...子属性/>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+    
+    <!-- 可选：如果需要驱动关节，在这里定义 Actuator -->
+    <actuator>
+        <motor name="pillar_motor" joint="pillar_joint" ctrlrange="-1 1" ctrllimited="true"/>
+    </actuator>
+</mujoco>
