@@ -1,1 +1,5 @@
 gitignore/测试要被忽略的文件
+bin/
+lib/
+pyvenv.cfg
+
