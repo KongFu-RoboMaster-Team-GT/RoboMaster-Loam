@@ -18,7 +18,7 @@ mapping = {
     "大臂对侧": "LargeArmOppositeSide",
     "改": "Modify",
     "上": "Upper",
-    "合页一 半": "HingeHalfOne",
+    "合页一半": "HingeHalfOne",
     "大臂垫块": "LargeArmSpacer",
     "后挂载板": "RearMountingPlate",
     "前": "Front",
